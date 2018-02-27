@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="wedding, wedding meadows, country wedding, rustic wedding, wedding venue, outdoor wedding, beautiful wedding, spokane wedding, cheney wedding, rustic meadows">
+		<meta name="DC.title" content="Rustic Meadows">
+		<meta name="description" content="Plan your perfect wedding at our beautiful country home, with gorgeous views, ample space, a rustic old-timey feel, and a caring family-run staff.">
+		<meta name="robots" content="index,follow">
+		<title>Rustic Meadows</title>
+		<link rel="stylesheet" href="help.css" type="text/css"/>
+	</head>
+	<body>
+		<div id="mainBody">
+			<nav>
+			  <ul class="navlist">
+			    <li><a class="active" href="index.html">Home</a></li>
+				<li><a href="package.html">Wedding Packages</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="pictures.html">Gallery</a><li>
+				<li><a href="contact.html">Contact Us</a></li>
+			  </ul>
+			</nav>
+			<img class="headerimg2" alt="rustic meadows website background" src="Pictures\RusticMeadowsWeddingBackground.png"/>
+			<p class="title">Rustic</p>
+			<p class="title2">Meadows</p>
+			<div class="slideshow">
+				<img class="mySlides fade" alt="rustic meadows wedding bride and groom" src="Pictures\RusticMeadowsBrideGroom.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows ceremony area" src="Pictures\RusticMeadowsCeremony.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows reception area" src="Pictures\RusticMeadowsReception.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows wedding first kiss" src="Pictures\RusticMeadowsKiss.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows bride and groom chairs" src="Pictures\RusticMeadowsMrMrs.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows night lights" src="Pictures\RusticMeadowsLights.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows welcome sign" src="Pictures\RusticMeadowsSign.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows table setup" src="Pictures\RusticMeadowsTable.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows walkway to ceremony" src="Pictures\RusticMeadowsWalkway.jpg"/>
+				<img class="mySlides fade" alt="rustic meadows wagon wheel decoration" src="Pictures\RusticMeadowsWheel.jpg"/>
+			</div>
+			<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			    var i;
+			    var slides = document.getElementsByClassName("mySlides");
+
+			    for (i = 0; i < slides.length; i++) {
+			       slides[i].style.display = "none";  
+			    }
+			    slideIndex++;
+			    if (slideIndex> slides.length) {slideIndex = 1}    
+			    slides[slideIndex-1].style.display = "block";  
+			    setTimeout(showSlides, 6000);
+			}
+			</script>
+		</div>
+	</body>		
+</html>

@@ -1,0 +1,174 @@
+/* page positions */
+#mainBody{
+	position: fixed;
+	top: 46px;
+	left: 0px;
+}
+
+.center{
+	position: fixed;
+	left: 0;
+	top: 75%;
+	width: 100%;
+	text-align: center;
+}
+
+#about{
+	position: fixed;
+	top: 50px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	overflow: scroll;
+}
+
+
+/* fonts */
+@font-face{
+	font-family: Wellone;
+	src: url("fonts/Fonts/Wellone/Wellone.otf") format("opentype");
+}
+
+@font-face{
+	font-family: Brush;
+	src: url("fonts/Fonts/ufonts.com_brush-script-mt.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: Barkless;
+	src: url("fonts/Fonts/Barkless/Barkless.otf") format("opentype");
+}
+
+@font-face{
+	font-family: Anter;
+	src: url("fonts/Fonts/Anter/Anter.otf") format("opentype");
+}
+
+@font-face{
+	font-family: Naive;
+	src: url("fonts/Fonts/Naive/Naive.otf") format("opentype");
+}
+
+
+
+/* lists */
+.navlist{
+	position: fixed;
+	white-space: nowrap;
+	float: none;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.navlist li{
+	display: inline-block;
+}
+
+.navlist li a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navlist li a:hover {
+    background-color: #111;
+}
+
+.desclist{
+	font-family:"Times New Roman";
+	font-size: 200%;
+	color: black;
+}
+
+.desclist li{
+	list-style-type: circle;
+}
+
+
+
+/* background pictures, slideshows */
+.headerimg{
+	position: fixed;
+	top: 46px;
+	left: 0px;
+	opacity: .5;
+	width: 100vw;
+	height: 100vh;
+}
+
+.headerimg2
+{
+	position: fixed;
+	top: 46px;
+	left: 0px;
+	right: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.slideshow{
+	position: fixed;
+	top: 387px;
+	left: 750px;
+	transform: translate(-50%, -50%);"
+}
+
+.mySlides{
+	display: none;
+	animation: fade 6s;
+	/*top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+}
+
+/* Fading animation */
+@keyframes fade {
+  0% {opacity: 0;} 
+  16.66%{opacity: 1;}
+  33.32% {opacity: 1;}
+  49.98% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+
+/* word content */
+/* Anter, Naive */
+p.title{
+	position: fixed;
+	font-family: "Bodoni MT";
+	top: -30px;
+	font-size: 400%;
+	color: white;
+}
+
+p.title2{
+	position: fixed;
+	font-family: Brush;
+	font-size: 400%;
+	top: 15px;
+	color: white;
+}
+
+p.desc{
+	font-family: Barkless;
+	font-size: 200%;
+	color: blanchedalmond;
+}
+
+p.words{
+	position: relative;
+	font-family: "Times New Roman";
+	text-indent: 2.0em;
+	font-size: 200%;
+	color: black;
+	font-weight: bold;
+	clear: left;
+}

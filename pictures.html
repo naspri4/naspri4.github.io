@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="keywords" content="wedding, wedding meadows, country wedding, rustic wedding, wedding venue, outdoor wedding, beautiful wedding, spokane wedding, cheney wedding, rustic meadows">
+		<meta name="DC.title" content="Rustic Meadows">
+		<title>Rustic Meadows</title>
+		<link rel="stylesheet" href="help.css" type="text/css"/>
+	</head>
+	<body>
+		<div id="mainBody">
+			<nav>
+			  <ul class="navlist">
+			    <li><a href="index.html">Home</a></li>
+				<li><a href="package.html">Wedding Packages</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a class="active" href="pictures.html">Gallery</a><li>
+				<li><a href="contact.html">Contact Us</a></li>
+			  </ul>
+			</nav>
+			<img class="headerimg" alt="rustic meadows website background" src="Pictures\RusticMeadowsWeddingBackground.png"/>
+			<div class="slideshow" style="left: 637px;">
+				<img class="static" alt="rustic meadows wedding bride and groom" src="Pictures\RusticMeadowsBrideGroom.jpg"/>
+				<img class="static" alt="rustic meadows ceremony area"src="Pictures\RusticMeadowsCeremony.jpg"/>
+				<img class="static" alt="rustic meadows reception area" src="Pictures\RusticMeadowsReception.jpg"/>
+				<img class="static" alt="rustic meadows wedding first kiss" src="Pictures\RusticMeadowsKiss.jpg"/>
+				<img class="static" alt="rustic meadows bride and groom chairs" src="Pictures\RusticMeadowsMrMrs.jpg"/>
+				<img class="static" alt="rustic meadows night lights" src="Pictures\RusticMeadowsLights.jpg"/>
+				<img class="static" alt="rustic meadows welcome sign" src="Pictures\RusticMeadowsSign.jpg"/>
+				<img class="static" alt="rustic meadows table setup" src="Pictures\RusticMeadowsTable.jpg"/>
+				<img class="static" alt="rustic meadows walkway to ceremony" src="Pictures\RusticMeadowsWalkway.jpg"/>
+				<img class="static" alt="rustic meadows wagon wheel decoration" src="Pictures\RusticMeadowsWheel.jpg"/>
+			</div>
+			
+			<img src="Pictures\RusticMeadowsCircleL.png" alt="previous picture button" title="click to go to the previous picture" class="btnFloat" style="position: fixed; top: 45%; left: 0" onclick="plusDivs(-1)"/> 
+			<img src="Pictures\RusticMeadowsCircleR.png" alt="next picture button" title="click to go to the next picture" class="btnFloat" style="position: fixed; top: 45%; right: 0" onclick="plusDivs(1)"/>
+			
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex)
+			
+			function plusDivs(n){
+				showDivs(slideIndex += n);
+			}
+			
+			function showDivs(n){
+				var i;
+				var x = document.getElementsByClassName("static");
+				if (n > x.length){
+					slideIndex = 1;
+				}
+				if (n < 1){
+					slideIndex = x.length;
+				}
+				for (i = 0; i < x.length; i++){
+					x[i].style.display = "none";
+				}
+				x[slideIndex-1].style.display = "block";
+			}
+			</script>
+		</div>
+	</body>		
+</html>
